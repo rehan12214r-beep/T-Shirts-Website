@@ -34,6 +34,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body{
@@ -43,6 +44,7 @@ body{
     line-height: 1.6;
     background-color: var(--white);
     overflow-x: hidden;
+    position: relative;
     
 }
 /* Container jo content ko center aur limit mein rakhega */
@@ -181,12 +183,15 @@ a{
     
 }
 .category-card {
-    flex-basis:18%;
+    flex: 1 1 140px; /* Yeh card ko adjust hone dega */
+    max-width: 100%;
     
 }
 .category-logos {
     background-color: var(--white);
-    width: 170px;
+    width: 100%; /* Fixed 170px hata kar 100% karein */
+    max-width: 170px;
+    margin: 0 auto;
     padding: 1rem;
     height: 170px;
     display: grid;

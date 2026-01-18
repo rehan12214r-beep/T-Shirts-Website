@@ -74,3 +74,9 @@ display: none;
     font-size: 3rem;
 }
 }
+@media (max-width: 930px) {
+    .hero-sec p {
+        width: 100%;
+        max-width: 100%;
+    }
+}
